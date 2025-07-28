@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 30rem;
+  --font-utama: "public-sans" sans-serif;
+  --font-secondary: "roboto";
+  --color-secondary: #637381;
+  --color-hijau: #00a76f;
+  --color-outline: #919eab;
+  --color-inline: #212b36;
+  --color-biru: #9bdfe8;
+  --color-biru2: #04abc8;
+  --color-black: #141414;
+  --color-gry: #b3b3b3;
+  --color-error: #ff5630;
+}
+
+.nav-text {
+  @apply font-utama font-semibold text-[14px];
+}
+
+.nav-link {
+  @apply w-full h-[1.5px] bg-biru scale-x-0 group-hover:scale-x-100 rounded transition-all ease-in-out duration-300;
+}
+
+.nav-button {
+  @apply px-3 h-9 rounded-lg text-base font-medium;
+}
+
+.text-artikel {
+  @apply font-utama sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold text-white md:line-clamp-1 lg:line-clamp-2;
+}
+
+.text-p {
+  @apply font-utama text-[14px] font-semibold md:line-clamp-1 lg:line-clamp-2;
+}
+
+.avatar-artikel {
+  @apply absolute right-3/5 sm:right-3/6 md:right-3/5 lg:right-3/6 -translate-x-1/2 -translate-y-1/2;
+}
+.avatar {
+  @apply absolute right-3/5 sm:right-3/6 md:right-3/5 lg:right-2/5 xl:right-3/6 -translate-x-1/2 -translate-y-2/5;
+}
+
+.img-versi-mobile {
+  @apply rounded-t-2xl w-full h-fit aspect-square object-cover;
+}
+
+.img-recomendation {
+  @apply rounded-t-2xl w-full h-fit aspect-square object-cover;
+}
+
+.img-video {
+  @apply rounded-t-2xl w-full h-fit aspect-video object-cover;
+}
+
+.button-blog-text {
+  @apply text-sm font-medium text-inline bg-outline/15 py-2 px-4 rounded-lg;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/images/cover.png");
+  background-size: cover;
+  background-position: center;
+}

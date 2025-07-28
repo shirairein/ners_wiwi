@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <title>Ners Wiwi</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-center md:justify-between h-16">
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-bold text-gray-800 bg-linear-to-r from-biru to-biru2">Ners Wiwi</span>
+          </div>
+          <ul class="hidden md:flex gap-6 items-center">
+            <li class="group">
+              <a href="beranda.html" class="nav-text">Beranda</a>
+              <div class="nav-link"></div>
+            </li>
+            <li class="group">
+              <a href="artikel.html" class="nav-text">Artikel</a>
+              <div class="nav-link"></div>
+            </li>
+            <li class="group">
+              <a href="video.html" class="nav-text">Video</a>
+              <div class="nav-link"></div>
+            </li>
+            <li class="group">
+              <a href="tentangkami.html" class="nav-text">Tentang Kami</a>
+              <div class="nav-link"></div>
+            </li>
+          </ul>
+          <div class="hidden md:flex items-center gap-2">
+            <a href="#" class="bg-white text-black border border-outline w-[72px] nav-button flex items-center">Masuk</a>
+            <a href="#" class="bg-inline text-white w-[72px] nav-button flex items-center">kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- artikel section -->
+    <section class="container mx-auto my-[74px] flex flex-col gap-10">
+      <h1 class="font-utama text-2xl text-inline font-bold p-2.5">Video</h1>
+      <div class="flex flex-col md:flex-row md:justify-between items-center gap-6 p-2.5">
+        <div class="flex items-center gap-1 rounded-lg w-full md:w-[260px] h-[54px] px-3.5 border border-outline shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-outline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+          <!-- <input placeholder="Search" class="text-outline text-sm p-2 font-normal "></input> -->
+        </div>
+        <div class="flex items-center gap-2 px-3.5 ml-auto">
+          <p class="font-utama text-base font-bold">Filter Berdasarkan: Terbaru</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </div>
+      </div>
+      <!-- versi pc -->
+      <div class="hidden xl:grid grid-cols-4 gap-6">
+        <div class="relative col-span-2">
+          <div class="absolute bg-black w-full h-full opacity-70 rounded-2xl shadow flex flex-col justify-between">
+            <div class="pl-6 pt-6">
+              <img src="/src/images/avatar.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-2 p-6">
+              <p class="font-utama font-normal text-xs text-white">06 May 2022</p>
+              <h1 class="text-artikel">Cara Mencegah Demam Berdarah</h1>
+            </div>
+          </div>
+          <img src="/src/images/nurse.png" alt="" class="w-full h-full object-cover rounded-2xl" />
+        </div>
+        <div class="relative col-span-1">
+          <div class="absolute bg-black w-full h-full opacity-70 rounded-2xl shadow flex flex-col justify-between">
+            <div class="pl-6 pt-6">
+              <img src="/src/images/avatar.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-2 p-6">
+              <p class="font-utama font-normal text-xs text-white">06 May 2022</p>
+              <h1 class="text-artikel">Cara Mencegah Demam Berdarah</h1>
+            </div>
+          </div>
+          <img src="/src/images/nurse.png" alt="" class="w-full h-full object-cover rounded-2xl" />
+        </div>
+        <div class="relative col-span-1">
+          <div class="absolute bg-black w-full h-full opacity-70 rounded-2xl shadow flex flex-col justify-between">
+            <div class="pl-6 pt-6">
+              <img src="/src/images/avatar.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-2 p-6">
+              <p class="font-utama font-normal text-xs text-white">06 May 2022</p>
+              <h1 class="text-artikel">Cara Mencegah Demam Berdarah</h1>
+            </div>
+          </div>
+          <img src="/src/images/nurse.png" alt="" class="w-full h-full object-cover rounded-2xl" />
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2.5 gap-6">
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2.5 gap-6">
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
+            <a href="#" class="relative">
+              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
+              <img src="/src/images/stack.png" alt="" class="avatar" />
+            </a>
+            <div class="p-6 mt-6 flex flex-col gap-6">
+              <a href="#">
+                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+              </a>
+              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container mx-auto pt-20 px-6 pb-10">
+      <div class="flex flex-col md:flex-row gap-6 justify-between font-utama">
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-6">
+            <img src="/src/images/avatar.png" alt="" class="w-[50px] mx-auto md:mx-0" />
+            <h1 class="max-w-2/3 mx-auto md:mx-0 text-center text-inline text-sm font-normal md:text-left">Perum Tirta Kencana Jln.Jakarta Kec.Kota Tengah Kota Gorontalo, Gorontalo</h1>
+          </div>
+          <div class="flex justify-center md:justify-start">
+            <img src="/src/images/IconFacebook.png" alt="" />
+            <img src="/src/images/IconInstagram.png" alt="" />
+            <img src="/src/images/IconTwitter.png" alt="" />
+            <img src="/src/images/IconLikedin.png" alt="" />
+          </div>
+        </div>
+        <!-- <div class="flex flex-col md:flex-row gap-10 md:gap-0"> -->
+        <div class="flex gap-6 justify-center text-center md:text-left">
+          <div class="flex flex-col gap-6">
+            <h1 class="font-bold text-base">NERS-WIWI</h1>
+            <div class="flex flex-col gap-3 text-sm font-medium text-inline">
+              <p>Tentang</p>
+              <p>Kontak</p>
+              <p>FAQs</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-6 justify-center text-center md:text-left">
+          <div class="flex flex-col gap-6">
+            <h1 class="font-bold text-base">Legal</h1>
+            <div class="flex flex-col gap-3 text-sm font-medium text-inline">
+              <p>Terms and condition</p>
+              <p>Privacy policy</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-6 justify-center text-center md:text-left">
+          <div class="flex flex-col gap-6">
+            <h1 class="font-bold text-base">Kontak</h1>
+            <div class="flex flex-col gap-3 text-sm font-medium text-inline">
+              <p>wiwipiola@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="font-utama text-sm font-normal text-center md:text-left mt-4">© 2025. All rights reserved</p>
+    </footer>
+  </body>
+</html>
