@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="/src/input.css" />
     <title>Ners Wiwi</title>
   </head>
-   <body class="bg-gray-100 text-white dark:text-black ">
+  <body class="bg-gray-100 text-white dark:text-black">
     <!-- nav -->
-      <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-center md:justify-between h-16">
           <div class="flex items-center gap-2">
@@ -47,14 +47,14 @@
       </div>
     </nav>
     <!-- artikel section -->
-    <section class="container mx-auto my-[74px] flex flex-col gap-10">
-      <h1 class="font-utama text-2xl text-inline font-bold p-2.5">Artikel</h1>
+    <section class="container mx-auto py-19 flex flex-col gap-10">
+      <h1 class="font-utama text-2xl md:text-4xl text-inline font-bold p-2.5">Artikel</h1>
       <div class="flex flex-col md:flex-row md:justify-between items-center gap-6 p-2.5">
         <div class="relative w-full md:w-fit h-fit">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-outline absolute left-3 bottom-1 -translate-y-1/2">
             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
           </svg>
-          <input placeholder="Search" class="flex pl-10 relative items-center gap-1 rounded-lg w-full md:w-[260px] h-[54px] px-3.5 border border-outline shadow-md" />
+          <input placeholder="Search" class="flex pl-10 relative items-center gap-1 rounded-lg w-full md:w-[260px] h-[54px] px-3.5 border-1 border-biru2 shadow-md" />
         </div>
         <div class="flex items-center gap-2 px-3.5 ml-auto">
           <p class="font-utama text-base font-bold">Filter Berdasarkan:</p>
@@ -64,136 +64,240 @@
           </select>
         </div>
       </div>
-      <!-- versi pc -->
-      <div class="hidden xl:grid grid-cols-4 gap-6">
+      <!-- versi pc kalau mobile dia gak ada -->
+      <div class="hidden xl:grid grid-cols-4 gap-6 p-2.5">
         <div class="relative col-span-2">
           <div class="absolute bg-black w-full h-full opacity-70 rounded-2xl shadow flex flex-col justify-between">
             <div class="pl-6 pt-6">
               <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
             </div>
-            <div class="flex flex-col gap-2 p-6">
+            <a href="blog.html" class="flex flex-col gap-2 p-6">
               <p class="font-utama font-normal text-xs text-white">06 May 2022</p>
               <h1 class="text-artikel">Cara Mencegah Demam Berdarah</h1>
-            </div>
+            </a>
           </div>
-          <img src="/src/images/nurse.png" alt="" class="w-full h-full object-cover rounded-2xl" />
+          <img src="/src/images/artikel.jpg" alt="" class="w-full h-96 object-cover rounded-2xl" />
         </div>
         <div class="relative col-span-1">
           <div class="absolute bg-black w-full h-full opacity-70 rounded-2xl shadow flex flex-col justify-between">
             <div class="pl-6 pt-6">
               <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
             </div>
-            <div class="flex flex-col gap-2 p-6">
+            <a href="blog.html" class="flex flex-col gap-2 p-6">
               <p class="font-utama font-normal text-xs text-white">06 May 2022</p>
               <h1 class="text-artikel">Cara Mencegah Demam Berdarah</h1>
-            </div>
+            </a>
           </div>
-          <img src="/src/images/nurse.png" alt="" class="w-full h-full object-cover rounded-2xl" />
+          <img src="/src/images/artikel.jpg" alt="" class="w-full h-96 object-cover rounded-2xl" />
         </div>
         <div class="relative col-span-1">
           <div class="absolute bg-black w-full h-full opacity-70 rounded-2xl shadow flex flex-col justify-between">
             <div class="pl-6 pt-6">
               <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
             </div>
-            <div class="flex flex-col gap-2 p-6">
+            <a href="blog.html" class="flex flex-col gap-2 p-6">
               <p class="font-utama font-normal text-xs text-white">06 May 2022</p>
               <h1 class="text-artikel">Cara Mencegah Demam Berdarah</h1>
-            </div>
+            </a>
           </div>
-          <img src="/src/images/nurse.png" alt="" class="w-full h-full object-cover rounded-2xl" />
+          <img src="/src/images/artikel.jpg" alt="" class="w-full h-96 object-cover rounded-2xl" />
         </div>
-      </div>
       </div>
       <div class="container mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2.5 gap-6">
-          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
-            <a href="#" class="relative">
-              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
-            </a>
-            <div class="p-6 pt-12 flex flex-col gap-6 relative">
-              <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
-                  fill="white"
-                />
-              </svg>
-              <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
-                <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel.jpg" alt="" />
               </div>
-              <a href="#">
-                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
-              </a>
-              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
-            </div>
-          </div>
-          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
-            <a href="#" class="">
-              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
-            </a>
-            <div class="p-6 pt-12 flex flex-col gap-6 relative">
-              <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
-                  fill="white"
-                />
-              </svg>
-              <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
-                <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
               </div>
-              <a href="#">
-                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
-              </a>
-              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
             </div>
-          </div>
-          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
-            <a href="#" class="relative">
-              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
-            </a>
-            <div class="p-6 pt-12 flex flex-col gap-6 relative">
-              <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
-                  fill="white"
-                />
-              </svg>
-              <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
-                <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+          </a>
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel2.jpg" alt="" />
               </div>
-              <a href="#">
-                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
-              </a>
-              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
-            </div>
-          </div>
-          <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md">
-            <a href="#" class="relative">
-              <img class="img-versi-mobile md:img-recomendation" src="/src/images/nurse.png" alt="" />
-            </a>
-            <div class="p-6 pt-12 flex flex-col gap-6 relative">
-              <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
-                  fill="white"
-                />
-              </svg>
-              <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
-                <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
               </div>
-              <a href="#">
-                <p class="font-utama text-gry text-xs">31 Nov 2025</p>
-              </a>
-              <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
             </div>
-          </div>
+          </a>
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel2.jpg" alt="" />
+              </div>
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel2.jpg" alt="" />
+              </div>
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel.jpg" alt="" />
+              </div>
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel2.jpg" alt="" />
+              </div>
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel2.jpg" alt="" />
+              </div>
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-span-1 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-biru2 transition-all ease-in-out duration-300">
+              <div class="relative">
+                <img class="img-versi-mobile md:img-recomendation" src="/src/images/artikel2.jpg" alt="" />
+              </div>
+              <div class="p-6 pt-12 flex flex-col gap-6 relative">
+                <svg width="92" height="35" viewBox="0 0 92 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 -translate-y-5">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M70.6915 13.8394C63.9487 8.05889 58.9456 0.642578 46.0949 0.642578H45.333C32.4823 0.642578 27.4792 8.05889 20.7364 13.8394C15.8348 19.1668 8.39359 20.3273 0 20.5373V34.9057H91.4279V20.5373C83.0343 20.3273 75.5931 19.1668 70.6915 13.8394Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="avatar-artikel absolute left-[45px] top-2 translate-x-20 w-fit h-fit">
+                  <img src="/src/images/artikel.jpg" alt="" class="w-12 h-12 object-cover rounded-full" />
+                </div>
+                <div>
+                  <p class="font-utama text-gry text-xs">31 Nov 2025</p>
+                </div>
+                <p class="text-p">Ilmu Keperawatan: Cara Mencegah Dari Bahaya Merokok 2</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
