@@ -1483,9 +1483,13 @@
   color: var(--color-inline);
 }
 .hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/images/tentangkami2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/src/images/tentangkami2.jpg");
   background-size: cover;
   background-position: center;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 @property --tw-translate-x {
   syntax: "*";

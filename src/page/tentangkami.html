@@ -386,9 +386,31 @@
     <!-- section komentar -->
     <section class="hero-section w-full h-full text-white py-32 md:py-48 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto flex flex-col gap-8 text-left">
-        <p>Apa Kata Mereka?</p>
-        <h1 class="text-4xl md:text-5xl font-bold max-w-sm">Testimoni dari Klien Kami</h1>
-        <p class="text-xl md:text-2xl mb-8 max-w-md">Lihat bagaimana Eksplor Coding telah membantu banyak individu dan bisnis dalam belajar coding, membangun website, serta mengembangkan solusi digital yang efektif! 🚀</p>
+        <div class="flex flex-col gap-6">
+          <p>Apa Kata Mereka?</p>
+          <h1 class="text-4xl md:text-5xl font-bold max-w-sm">Testimoni dari <span class="text-biru2">Klien Kami</span></h1>
+          <p class="text-xl md:text-2xl mb-8 max-w-md">Lihat bagaimana Eksplor Coding telah membantu banyak individu dan bisnis dalam belajar coding, membangun website, serta mengembangkan solusi digital yang efektif! 🚀</p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
     </section>
     <!-- footer -->
@@ -438,4 +460,5 @@
       <p class="font-utama text-sm font-normal text-center md:text-left mt-4">© 2025. All rights reserved</p>
     </footer>
   </body>
+  <script src="/src/swiper.js"></script>
 </html>
