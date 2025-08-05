@@ -32,7 +32,7 @@
 }
 
 .text-p {
-  @apply font-utama text-[14px] font-semibold md:line-clamp-1 lg:line-clamp-2;
+  @apply font-utama text-[14px] font-semibold md:line-clamp-1 lg:line-clamp-2 text-black;
 }
 
 .avatar-artikel {
